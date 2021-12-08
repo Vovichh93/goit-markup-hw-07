@@ -1,13 +1,3 @@
-.contacts-mail:hover,
-.contacts-mail:focus {
-  color: var(--accent-color);
-}
-
-.contacts-tel:hover,
-.contacts-tel:focus {
-  color: var(--accent-color);
-}
-
 .footer-block {
   margin-left: auto;
   margin-right: auto;
@@ -49,6 +39,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .mail-futter {
   margin-bottom: 9px;
@@ -61,6 +55,10 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-address-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .tittle-socials {
   font-weight: 700;
@@ -82,12 +80,12 @@
   display: flex;
 }
 
-.social-item:not(:last-child) {
-  margin-right: 10px;
-}
 .social-item {
   width: 44px;
   height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .social-link {
   width: 100%;
@@ -101,10 +99,10 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link:hover,
-.social-link:focus {
-  background-color: #2196f3;
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
 }
 
 .social-icon {
@@ -136,14 +134,15 @@
   border-radius: 4px;
   background-color: transparent;
   outline: none;
-}
-.input-subscription::placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .btn-subscription {

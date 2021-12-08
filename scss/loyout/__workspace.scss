@@ -17,11 +17,12 @@
   display: flex;
   justify-content: center;
 }
-.order-img:not(:last-child) {
-  margin-right: 30px;
-}
+
 .order-img {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .order-img-header {

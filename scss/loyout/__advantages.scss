@@ -13,11 +13,11 @@
 }
 .list-text {
   width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.list-text:not(:last-child) {
-  margin-right: 30px;
-}
 .page-section-icon {
   padding: 25px 100px;
   background: #f5f4fa;
