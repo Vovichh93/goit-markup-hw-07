@@ -358,7 +358,7 @@ body {
   color: var(--second-logo-color);
 }
 
-.header-border {
+.header__border {
   background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
@@ -930,7 +930,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  fill: #ffffff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
@@ -941,6 +940,10 @@ body {
 
 .futter-socials__link:hover, .futter-socials__link:focus {
   background-color: #2196f3;
+}
+
+.futter-socials__icon-wite {
+  fill: #ffffff;
 }
 
 .futter__subscription {
