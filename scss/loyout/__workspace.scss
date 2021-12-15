@@ -1,31 +1,22 @@
-.classes {
+.workspace {
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 94px;
 }
-.title-work {
-  margin-bottom: 50px;
-  background: #ffffff;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--second-title-color);
-}
-.list-img {
+
+.workspace__list {
   display: flex;
   justify-content: center;
 }
 
-.order-img {
+.workspace__item {
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.order-img-header {
+.workspace-item__text {
   display: flex;
   position: absolute;
   width: 100%;

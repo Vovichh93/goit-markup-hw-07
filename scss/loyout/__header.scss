@@ -8,25 +8,20 @@
   display: flex;
 }
 
-.header-navigation {
+.navigation {
   display: flex;
   align-items: center;
 }
-.header-list {
+.nav {
   display: flex;
 }
-.header-item {
+.nav__item {
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
-.header-contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
 
-.header-link {
+.nav__link {
   position: relative;
 
   display: block;
@@ -42,7 +37,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &.current::after {
+  &_current::after {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -55,7 +50,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
   }
-
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -63,35 +57,30 @@
   }
 }
 
-.header-mail {
-  display: block;
-  padding-bottom: 32px;
-  padding-top: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-  margin-right: 50px;
-
-  transition-property: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
-.header-mail-icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+.contacts-header {
+  display: flex;
   align-items: center;
-  fill: currentColor;
+  margin-left: auto;
+  &__icon-letter {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+  }
+
+  &__icon-book {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.header-tel {
+.contacts-header__mail {
   display: block;
   padding-bottom: 32px;
   padding-top: 32px;
@@ -109,9 +98,22 @@
     color: var(--accent-color);
   }
 }
-.header-tel-icon {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
+
+.contacts-header__tel {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+
+  transition-property: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

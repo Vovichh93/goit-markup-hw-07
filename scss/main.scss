@@ -1,8 +1,11 @@
 @import './utils/_vars';
 @import './utils/_reset';
-@import './components/_container';
 @import './utils/_common';
 @import './utils/_hidden';
+
+@import './components/_container';
+@import './components/_modal';
+
 @import './loyout/_logo';
 @import './loyout/_header';
 @import './loyout/_hero';
@@ -13,4 +16,3 @@
 @import './loyout/_contacts';
 @import './loyout/_filter';
 @import './loyout/_gallery';
-@import './components/_modal';
